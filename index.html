@@ -9,12 +9,28 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body>
+<body class="font-outfit bg-c_main_BG">
     <main
-        class="w-full min-h-screen bg-gradient-to-r from-fuchsia-500 to-cyan-500 flex items-center justify-center">
-        <h1 class="font-mono font-bold text-3xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Vite + Typescript + TailwindCSS + GitHub Pages
-        </h1>
+        class="w-full min-h-screen flex flex-col items-center md:justify-center px-5 py-12">
+        <!-- card -->
+         <section class="bg-c_card_BG flex flex-col md:max-w-[15.5rem] md:p-4 p-5 rounded-lg gap-3">
+            <div class="rounded-md overflow-hidden w-full flex items-center justify-center group aspect-square relative bg-[url(/images/image-equilibrium.jpg)] bg-cover">
+                <div class="cursor-pointer w-full h-full absolute flex items-center justify-center bg-transparent opacity-45 hover:bg-c_Cyan transition">
+                </div>
+                <img src="/images/icon-view.svg" alt="view icon" class="opacity-0 h-8 transition group-hover:opacity-100 z-10">
+            </div>
+            <h1 class="text-white md:text-[1rem] text-xl font-semibold cursor-pointer transition hover:text-c_Cyan">Equilibrium #3429</h1>
+            <p class="text-c_Soft_blue md:text-xs">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="w-full flex items-center justify-between md:text-xs">
+                <span class="text-c_Cyan uppercase flex font-bold gap-1 items-center"><img src="/images/icon-ethereum.svg" class="h-4" alt="eth icon"> 0.041ETH</span>
+                <span class="text-c_Soft_blue flex items-center gap-1"><img src="/images/icon-clock.svg" class="md:h-3 h-4" alt="clock icon"> 3 days left</span>
+            </div>
+            <div class="border-t-[1px] border-c_line w-full"></div>
+            <div class="flex items-center gap-3 md:text-xs pb-1">
+                <img src="/images/image-avatar.png" class="rounded-full border-[1px] border-white size-7" alt="avatar">
+                <p class="text-c_Soft_blue">Creation of <span class="text-white font-semibold transition cursor-pointer hover:text-c_Cyan">Jules Wyvern</span></p>
+            </div>
+         </section>
     </main>
     <script type="module" src="/src/main.ts"></script>
 </body>
